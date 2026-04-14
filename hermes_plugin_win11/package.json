@@ -1,0 +1,46 @@
+{
+  "name": "hermes-plugin",
+  "version": "1.0.0",
+  "description": "Claude Code plugin embedding all Hermes self-learning capabilities",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./modules": "./dist/src/modules/index.js"
+  },
+  "claude-code-plugin": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "test": "node --test dist/tests/*.js",
+    "dev": "node dist/src/cli.js",
+    "install:plugin": "node install.js",
+    "uninstall:plugin": "node uninstall.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.41.0",
+    "@honcho-ai/sdk": "^2.1.1",
+    "better-sqlite3": "^11.10.0",
+    "honcho-ai": "^0.2.0",
+    "mem0ai": "^2.4.6",
+    "zod": "^3.24.0"
+  },
+  "peerDependencies": {
+    "@anthropic-ai/claude-code": "*"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "hermes",
+    "self-learning"
+  ],
+  "license": "MIT"
+}

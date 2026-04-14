@@ -1,0 +1,28 @@
+{
+  "description": "Hermes self-learning automation hooks",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "SkillTool",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[Hermes] Skill usage detected — optimizer will evaluate on next threshold.'",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[Hermes] Session ended — trajectory and memory sync scheduled.'",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}

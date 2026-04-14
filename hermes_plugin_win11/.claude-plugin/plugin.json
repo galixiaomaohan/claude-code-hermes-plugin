@@ -1,0 +1,17 @@
+{
+  "name": "hermes-plugin",
+  "version": "1.0.0",
+  "description": "Hermes self-learning plugin for Claude Code — Skills Hub, Auto-Skill Creation, Skill Optimization, Memory, Context Intelligence, and Training Bridge.",
+  "author": {
+    "name": "Hermes Team"
+  },
+  "homepage": "https://github.com/hermes-agent/hermes-plugin",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "hermes",
+    "self-learning",
+    "skills",
+    "memory"
+  ]
+}

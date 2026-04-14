@@ -1,0 +1,1 @@
+Hermes Plugin for Claude Code — embeds the Hermes self-learning engine (from hermes-agent) into Claude Code CLI. Adds Skills Hub, Auto-Skill Creation, Memory Search, Context Compression, and Trajectory Logging across Linux, macOS (untested), and Windows 11. MIT licensed.
